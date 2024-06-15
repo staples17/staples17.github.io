@@ -2,7 +2,11 @@ var API_key = "RGAPI-d80a9254-b07f-4975-8cdb-26e44b10806f";
 var summoner_name= "";
 var summoner_tag ="";
 var na_puuid_url = "https://americas.api.riotgames.com";
-
+git clone https://github.com/Rob--W/cors-anywhere.git
+cd cors-anywhere/
+npm install
+heroku create
+git push heroku master
 
 function get_puuid()
 {
