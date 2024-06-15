@@ -20,7 +20,7 @@ async function data()
     var puuidUrl = "/riot/account/v1/accounts/by-riot-id/"+summoner_name+"/"+summoner_tag;
     var fullSummonerNameUrl = na_puuid_url+puuidUrl+"?api_key="+API_key;
     console.log(fullSummonerNameUrl);
-    const summonerPuuid = await fetch(fullSummonerNameUrl, {mode: 'no-cors'});
+    const summonerPuuid = await fetch(fullSummonerNameUrl);
     const summonerPuuid2 = await summonerPuuid.json();
     console.log(summonerPuuid2);
 
