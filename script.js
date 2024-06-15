@@ -23,9 +23,6 @@ async function data()
     const summonerPuuid = await fetch(fullSummonerNameUrl, {
         method: "POST",
           mode: "no-cors",
-          headers: {
-        "Content-Type": "json",
-        }
       });
     console.log(summonerPuuid);
     const summonerPuuid2 = await summonerPuuid.jsonp();
