@@ -21,9 +21,10 @@ async function data()
     var fullSummonerNameUrl = na_puuid_url+puuidUrl+"?api_key="+API_key;
     console.log(fullSummonerNameUrl);
     const summonerPuuid = await fetch(fullSummonerNameUrl, {
-        // NEW - add a Content-Type header
-        headers: {
-          "Content-Type": "application/json"
+        method: "POST",
+          mode: "cors",
+          headers: {
+        "Content-Type": "json",
         }
       });
     console.log(summonerPuuid);
