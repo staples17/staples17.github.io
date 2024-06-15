@@ -18,11 +18,11 @@ async function data()
 {
 
     var puuidUrl = "/riot/account/v1/accounts/by-riot-id/"+summoner_name+"/"+summoner_tag;
-    var fullSummonerNameUrl = "https://cors-anywhere.herokuapp.com/"na_puuid_url+puuidUrl+"?api_key="+API_key;
+    var fullSummonerNameUrl = "https://cors-anywhere.herokuapp.com/"+na_puuid_url+puuidUrl+"?api_key="+API_key;
     console.log(fullSummonerNameUrl);
     const summonerPuuid = await fetch(fullSummonerNameUrl);
     console.log(summonerPuuid);
-    const summonerPuuid2 = await summonerPuuid.jsonp();
+    const summonerPuuid2 = await summonerPuuid.json();
     console.log(summonerPuuid2);
 
     var bigpuuid = summonerPuuid2.puuid;
