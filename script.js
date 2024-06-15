@@ -1,4 +1,4 @@
-var API_key = "RGAPI-10bbb9c7-9a48-4cd8-9d92-466caa1d6157";
+var API_key = "RGAPI-d80a9254-b07f-4975-8cdb-26e44b10806f";
 var summoner_name= "";
 var summoner_tag ="";
 var na_puuid_url = "https://americas.api.riotgames.com";
