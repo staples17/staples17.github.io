@@ -21,7 +21,7 @@ async function data()
     var fullSummonerNameUrl = na_puuid_url+puuidUrl+"?api_key="+API_key;
     console.log(fullSummonerNameUrl);
     const summonerPuuid = await fetch(fullSummonerNameUrl);
-    const summonerPuuid2 = await summonerPuuid.json();
+    const summonerPuuid2 = await summonerPuuid.jsonp();
     console.log(summonerPuuid2);
 
     var bigpuuid = summonerPuuid2.puuid;
